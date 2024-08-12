@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'students/css/styles.css' %}">
+    <title>Student List</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <a href="{% url 'student_create' %}">Add New Student</a>
+    <ul>
+        {% for student in students %}
+            <li>
+                <a href="{% url 'student_detail' student.pk %}">{{ student.name }}</a>
+                ({{ student.roll_no }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

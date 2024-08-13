@@ -34,3 +34,4 @@ urllib3==2.2.1
 virtualenv==20.25.1
 virtualenvwrapper-win==1.2.7
 Werkzeug==3.0.2
+whitenoise==6.7.0

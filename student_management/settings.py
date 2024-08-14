@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*i#luz_z5typhdyh1l=-*c1a4&sjncr9+f6nbhca*_6n&(vu(*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['efficient-embrace-production.up.railway.app']
+ALLOWED_HOSTS = ['efficient-embrace-production.up.railway.app','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://efficient-embrace-production.up.railway.app']
 

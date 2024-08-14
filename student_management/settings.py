@@ -28,6 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['efficient-embrace-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGINS = ['https://efficient-embrace-production.up.railway.app']
 
 # Application definition
 
